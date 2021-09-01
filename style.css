@@ -62,14 +62,21 @@ width: 30px;
     height: auto;
     font-size: 19px;
 }
-
+select{
+    height: 32px;
+    border-radius: 4px;
+    width: 80px;
+}
+span{
+    margin-bottom: 6px;
+}
 /* row-1 */
 .row-1{
     width: 100%;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    margin-bottom: 20px;
+    margin-bottom: 55px;
 }
 .col-row-1{
     height: auto;
@@ -155,7 +162,7 @@ width: 30px;
 }
 
 #save:hover,#next:hover{
-    background-color: rgb(56, 26, 189);
+    background-color: #f4a024;
 }
 
 
@@ -195,6 +202,7 @@ width: 30px;
     color: black;
     margin: 0px;
     text-decoration: none;
+    cursor: pointer;
     border-bottom: 1px solid rgba(34,36,38,.15);
 }
 .aboutyou:hover,.yrsearch:hover,.yrskill:hover,.yrexper:hover{
@@ -216,3 +224,48 @@ width: 30px;
 .description{
     font-size: 12px;
 }
+
+
+/* experience.css */
+.row-1,.row-2,.row-3{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-bottom: 55px;
+  }
+  .col-row-1{
+    height: auto;
+    width: 33.33%;
+    display: flex;
+    flex-direction: column;
+    /* margin-left: 80px; */
+  }
+  .col-row-2{
+    height: auto;
+    width: 33.33%;
+    display: flex;
+    flex-direction: column;
+  }
+  .col-row-3,.col-row-4,.col-row-5,.col-row-6,.col-row-7,.col-row-8,.col-row-9{
+    height: auto;
+    width: 33.33%;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  
+  .star{
+    height: 20px;
+    width: 20px;display:inline;
+    color: red;
+  }
+  #fname, #lname,#country,#state,#city,#nation,#curr-nation,#pre-nation{
+    width: 215px;
+    height: 32px;
+    border-radius: 4px;
+  }
+  input{
+    width: 148px;
+      height: 51%;
+  }

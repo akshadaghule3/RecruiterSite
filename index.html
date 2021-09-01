@@ -17,7 +17,11 @@
 <body>
     <!-- navbar -->
     <div class="navbar">
-          <span class="iconic-list"><i class="far fa-bell"></i></span>
+          <span class="iconic-list">
+            <button class="bellicon_btn"><img src="./aset/bell-icon.png" height="30" width="30" alt=""> </button>
+              
+            
+        </span>  
     </div>
 
     <!-- sidebar -->
@@ -27,18 +31,14 @@
     <!-- <img src="../images/" alt=""> -->
     <i class="fas fa-user-alt"></i>
     <h2 class="userName">Akshada</h2>
-    <p class="userText">Web developer</p>
+    <!-- <p class="userText">Web developer</p> -->
   </header>
   <nav class="navigation">
     <ul class="nav-list">
       <li class="list-item active"><a href="#"><i class="fab fa-codepen"></i>Dashboard</a></li>
-      <li class="list-item">
-        <a href="#"></i><text style="font-size: 12px;
-          margin-left: 71px;">Application Tracker</text></a><i aria-hidden="true" class="icon sh-dashboard-1"></i>
-      </li>
-      <li class="list-item">
-        <a href="#"><i class="fab fa-html5"></i>HTML</a>
-      </li>
+      <!-- <li class="list-item"> -->
+        <li class="list-item active"><a href="#"><i class="fab fa-codepen"></i>Application Tracker</a></li>
+      <li class="list-item"><a href="#"><i class="fab fa-html5"></i>HTML</a></li>
       
     </ul>
   </nav>
@@ -68,7 +68,7 @@
                             <span class="col-row-1">
                                <span> <label>Title<p class="star">*</p></label></span>
                                 <select name="" id="" style="height: 32px;border-radius: 4px;width: 80px;" placeholder="-select-">
-                                    <option></option>
+                                    <option>-select-</option>
                                     <option>Mr.</option>
                                     <option>Mrs.</option>
                                 </select>
@@ -90,7 +90,7 @@
                             <span class="col-row2-1">
                                <span> <label>Country of living<p class="star">*</p></label></span>
                                 <select name="" id="country" style="height: 32px;border-radius: 4px;">
-                                    <option></option>
+                                    <option>-select-</option>
                                     <option>France</option>
                                     <option>Germany</option>
                                     <option>India</option>
@@ -102,7 +102,7 @@
                             <span class="col-row2-2">
                                 <span><label >State<p class="star">*</p></label></span>
                                 <select name="" id="state" style="height: 32px;border-radius: 4px;">
-                                    <option></option>
+                                    <option>-select-</option>
                                     <option>Berlin</option>
                                     <option>Paris</option>
                                     <option>Maharastra</option>
@@ -114,7 +114,7 @@
                             <span class="col-row2-3">
                                <span><label>City<p class="star">*</p></label></span>
                                <select name="" id="city" style="height: 32px;border-radius: 4px;">
-                                <option></option>
+                                <option>-select-</option>
                                 <option>Mumbai</option>
                                 <option>Pune</option>
                                 <option>Chennai</option>
@@ -129,7 +129,7 @@
                             <span class="col-row3-1">
                                <span> <label>Nationality<p class="star">*</p></label></span>
                                 <select name="" id="nation" style="height: 32px;border-radius: 4px;">
-                                    <option></option>
+                                    <option>-select-</option>
                                     <option>Indian</option>
                                     <option>Us</option>
                                     <option>UK</option>
@@ -139,7 +139,7 @@
                             <span class="col-row3-2">
                                 <span><label >Current-Nationality<p class="star">*</p></label></span>
                                 <select name="" id="curr-nation" style="height: 32px;border-radius: 4px;">
-                                    <option></option>
+                                    <option>-select-</option>
                                     <option>India</option>
                                     <option>Pune</option>
                                 </select>
@@ -148,7 +148,7 @@
                             <span class="col-row3-3">
                                <span><label>Previous-Nationality<p class="star">*</p></label></span>
                                <select name="" id="pre-nation" style="height: 32px;border-radius: 4px;">
-                                <option></option>
+                                <option>-select-</option>
                                 <option>India</option>
                                 <option>Pune</option>
                             </select>
@@ -194,7 +194,7 @@
                                 </div>
                         </div>
                     </a>
-                        <a href="" class="yrexper">
+                        <a onclick="showpage('experience')" class="yrexper">
                             <div class="content-1">
                                 <img src="./aset/work-icon.png" style="height: 35px; width: 35px; margin: 8px;" class="imglogo-1">
                                 <div class="content">
@@ -212,6 +212,7 @@
 
 <!-- script files -->
 <script src="./per-info.js"></script>
+<script src="./experience.js"></script>
 
 
 <!-- scripting code for sidebar -->
@@ -231,13 +232,18 @@
 
     <script>
         function showpage(page){
-            if(!page) {return("hello") } 
+            if(!page) {return}
 
         else if(page==='personal')
         {
             document.getElementById("per_info").innerHTML=personal;
         }
+        else if(page==='experience')
+        { 
+            document.getElementById("per_info").innerHTML=experience;
+        }
         }
     </script>
+
 </body>
 </html>

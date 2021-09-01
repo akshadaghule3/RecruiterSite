@@ -22,15 +22,25 @@ body {
     height: 56px;
     width: 89%;
     margin-left: 181px;
-    background-color:#99fa ;
+    background-color:rgb(14, 1, 73) ;
     position: fixed;
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: end;
 }
+
 .iconic-list{
-    margin-left: 1200px;
+    margin-left: 1044px;
+}
+.bellicon_btn{
+  border-radius: 20px;
+  height: 38px;
+  width: 85px;
+  background-color: rgb(241, 239, 239);
+}
+.bellicon_btn:hover{
+  background-color: #f4a024;
 }
 /* .fa-bell{
     height: 30px;
@@ -40,12 +50,14 @@ body {
   flex-direction: column;
   flex: 0 1 13rem;
   height:41rem;
+  width: 12%;
   /* border-radius: 1em; */
-  background: #99fa;
+  background: rgb(14, 1, 73);
   transition: all 500ms ease;
   overflow: hidden;
   margin-left: -1353px;
   position: absolute;
+  color: white;
   /* margin-top: 40px; */
 }
 
@@ -67,17 +79,17 @@ body {
 
   cursor: pointer;
   background: linear-gradient(
-    #0007 15%,
+    #9b9a9a 15%,
     0%,
-    #0000 30%,
+    white 30%,
     0%,
-    #0007 45%,
+    #9b9a9a 48%,
     0%,
-    #0000 60%,
+    white 68%,
     0%,
-    #0007 75%,
+    #9b9a9a 85%,
     0%,
-    #0000
+    white
   );
 }
 
@@ -107,10 +119,10 @@ aspect-ratio: 1;
 align-items: center;
 justify-content: center;
 font-size: 3rem;
-background-color: #ffffff90;
+background-color: #f4a024;
 border-radius: 50%;
 margin-bottom: 0.75rem;
-color: #999fff;
+color: white;
 /* margin-left: 40px; */
 
 }
@@ -118,19 +130,19 @@ color: #999fff;
 .userName {
   font-size: 1.4rem;
   font-weight: 800;
-  color: #333;
+  color: white;
   text-transform: uppercase;
   line-height: 1.5;
   /* margin-left: 36px; */
 }
-.userText {
+/* .userText {
   font-style: italic;
-  color: #666;
+  color: white;
   font-size: 1.15rem;
   font-weight: 300;
   margin-bottom: 1rem;
-  /* margin-left: 49px; */
-}
+  margin-left: 49px;
+} */
 
 .navigation {
   width: 100%;
@@ -150,18 +162,19 @@ a {
   padding: 0.5rem 0;
   margin: 1rem 0;
   border-radius: 0.35em;
-  background: #ffffff60;
+  background: white;
   display: flex;
   align-items: center;
   text-decoration: none;
-  gap: 2em;
+  gap: 1em;
   font-weight: 400;
-  font-size: 1rem;
+  font-size: 12px;
   color: #222;
 }
 
 a:hover {
-  background: #0001;
+  background: #f4a024;
+  /* color: white; */
 }
 
 .fab {
@@ -174,7 +187,7 @@ a:hover {
 }
 .footer{
     margin: auto;
-    margin-left: 75px;
+    /* margin-left: 75px; */
     font-size: 13px;
 }
 .mainbody{
